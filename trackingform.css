@@ -1,0 +1,26 @@
+.putleft{
+	float:left;
+}
+
+.fade{
+	opacity:1;
+}
+.putright{
+	float:right;
+	margin-left:40px;
+}
+.inner1{
+	font-size:16px;
+	padding:15px;
+	font-family:'roboto';
+}
+.inner2{
+	height:700px;
+	border-radius:10px;
+	background-color:white;
+	margin-top:20px;
+}
+.test1{
+	content: "\f054";
+	font-weight:bold;
+}

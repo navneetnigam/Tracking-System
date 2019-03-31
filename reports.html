@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type = "text/javascript" src="canvasjs.min.js"></script>
+	<script  type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+          $(document).ready(function () {
+
+            $.getJSON("data.php", function (result) {
+                var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "Gaming Consoles Sold in 2012"
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+			dataPoints: result
+		}
+		]
+	});
+	chart.render();
+});
+});
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+</html>

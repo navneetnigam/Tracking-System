@@ -1,0 +1,86 @@
+<html lang=eng-us>
+<head>
+<meta charset="UTF-8"/>
+<title>This is the Expense tracking system</title>
+    <link type="text/css" media="all" rel="stylesheet" href="trackingform.css">
+   <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Chicle|Roboto|FontAwesome" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body id="page">
+<div>
+<nav class="navbar bg-dark navbar-dark"  style="background-color:black;">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="#" style="color:white;">Combine Tracking system</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div >
+                <ul class="nav navbar-nav navbar-right">
+				    <li class="nav-item ">
+					    <a class= "nav-link link" href="#">Expense Tracker </a>
+                    <li class="nav-item ">
+                        <a href="#contact" class="nav-link link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+ </nav>
+ <div class="container form-group">
+ <form name="myForm" action="formdb.php" onsubmit="return validateform()" method="post">
+<table class="table table-bordered table-striped tab" id="maintab" name="mytable">
+<tr>
+<td colspan="2">INSTRUCTIONS:<br/><br/>
+ <ol>
+<li style="padding:10px">Fill in the form carefully</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="font-size:24px;padding:10px;col-span:2"><center>INCOME DETAIL </center></td> 
+</tr> 
+<tr>
+<td class="col-sm-5">Monthly income<span class="required">*</span></td>
+<td class="col-sm-7"><input type="float" name="income" size="70%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5">Savings Target<span class="required">*</span></td>
+<td class="col-sm-7"><input type="float" name="savings" size="70%" required /></td>
+</tr>
+<tr>
+<td colspan="2" style="font-size:24px;padding:10px;col-span:2"><center>Expense Details </center></td> 
+</tr>
+<tr>
+<td class="col-sm-5">Transportation Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7"><input type="number" name="transportex" size="70%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5">Food Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7"><input type="number" name="foodex" size="30%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5">Clothing Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7"><input type="number" name="clothingex" size="30%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5" >Electronic Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7" ><input type="number" name="electronicex" size="30%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5" >Grossery Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7" ><input type="number" name="grosseryex" size="30%" required /></td>
+</tr>
+<tr>
+<td class="col-sm-5" >Other Expenses(in rupees)<span class="required">*</span></td>
+<td class="col-sm-7" ><input type="number" name="otherex" size="30%" required /></td>
+</tr>
+
+</table>
+<center><button class="btn-success" type="submit" name="submit">Submit</button></center>
+</div>
+ </div>
+ </body>
+ </html>
